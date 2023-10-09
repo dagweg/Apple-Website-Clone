@@ -1,0 +1,28 @@
+Full list of the links to include on the heder along with their destination 
+
+Apple 
+	/home/
+
+Mac 
+	/mac/
+
+iPad 
+	/ipad/
+
+iPhone
+	/iphone/
+
+Watch
+	/watch/
+
+TV 
+	/tv/
+
+Music
+	/music/
+
+Support
+	/support/
+
+Search
+	/search/  

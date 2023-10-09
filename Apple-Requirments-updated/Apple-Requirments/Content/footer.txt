@@ -1,0 +1,68 @@
+Full list of the links to include on the footer along with their destination 
+
+Sample: 
+
+Hardware and Software
+	Hardware Warranties
+		/legal/warranty/
+
+	Software License Agreements
+		/legal/sla/
+
+	RF Exposure
+		/legal/rfexposure/
+
+More Resources
+	Overview
+		/legal/more-resources/
+	
+	Government Information Requests
+		/government-information-requests/
+	
+	Contact Apple Legal
+		/legal/contact/
+
+	Global Trade Compliance
+	
+	Supplier Provisions
+	
+	Filemaker Legal Information
+
+Sales & Support
+	Overview
+	AppleCare
+	Repair Terms and Conditions
+	Express Replacement Service
+	Remote Support Terms and Conditions
+	Sales Policies
+	Certification Agreements and Policies
+	Training Service Terms and Conditions
+	Support Communities Terms of Use
+
+Internet Services
+	Overview
+	Apple Media Services Terms and Conditions
+	iTunes Gift Cards and Codes Terms and Conditions
+	Game Center Terms and Conditions
+	iCloud Terms of Service
+	Privacy Policy
+	Website Terms of Use
+	iChat Account Terms of Service
+
+Intellectual Property
+	Overview
+	Guidelines for Using Apple Trademarks and Copyrights
+	Trademarks
+	Rights and Permissions
+	Piracy Prevention
+	Unsolicited Idea Submission Policy
+
+Education
+	Apple School Manager
+
+Enterprise
+	Apple Business Manager
+
+
+
+

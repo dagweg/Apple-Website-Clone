@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro", "Montserrat", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: #222;
+}
+
+
+
+h1 {
+    font-weight: '700';
+    font-size: 1.75em;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: 300;
+}
+
+p {
+    line-height: 1.3em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+ul li {
+    list-style: none;
+}
+
+.outer-wrapper {
+    width: 100vw;
+}
+
+a:not(.paragraph-link):visited {
+    text-decoration: none;
+}
+
+/* Header Styling */
+
+.header-wrapper {
+    background-color: #000a;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-weight: 200;
+    font-size: 0.75em;
+    position: fixed;
+    width: 100%;
+}
+
+.internal-wrapper {
+    width: 980px;
+    margin: 0 auto;
+    padding: 5px 0;
+    background-color: transparent #0001;
+    /* background-color: red; */
+}
+
+.header-links-wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.header-wrapper .header-links-wrapper ul li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: 150ms ease-in-out;
+}
+
+.header-wrapper .header-links-wrapper ul li:not(.logo-link):not(.search-link):not(.cart-link) {
+    opacity: 0.9;
+}
+
+.header-wrapper .header-links-wrapper ul li:not(.logo-link):not(.search-link):not(.cart-link):hover {
+    opacity: 1;
+}
+
+.header-wrapper .header-links-wrapper ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo-link,
+.search-link,
+.cart-link {
+    width: 1em;
+    display: block;
+    margin: 0 20px;
+}
+
+.logo-link a img,
+.search-link a img,
+.cart-link a img {
+    opacity: 0.9;
+}
+
+.logo-link a img:hover,
+.search-link a img:hover,
+.cart-link a img:hover {
+    opacity: 1;
+}
+
+.header-wrapper .internal-wrapper .header-links-wrapper ul li.logo-link,
+.header-wrapper .internal-wrapper .header-links-wrapper ul li.search-link,
+.header-wrapper .internal-wrapper .header-links-wrapper ul li.cart-link {
+    padding: 10px 0 8px;
+}
+
+
+/* Footer Styling */
+
+footer * {
+    color: #888;
+}
+
+.footer-wrapper {
+    padding: 10px;
+    font-size: 0.75em;
+    background-color: #F5F5F7;
+}
+
+.paragraph-link {
+    color: #555;
+}
+
+hr {
+    opacity: 0.5;
+}
+
+.footer-wrapper .internal-wrapper>* {
+    margin: 5px 0;
+}
+
+.footer-wrapper .internal-wrapper .upper-text-container p {
+    padding: 7px 0;
+}
+
+.footer-wrapper .internal-wrapper .footer-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links-wrapper .links-wrapper .footer-links-container {
+    padding: 5px 0;
+}
+
+.footer-links-wrapper .links-wrapper .footer-links-container>* {
+    padding: 10px 0;
+}
+
+.footer-links-wrapper .links-wrapper .footer-links-container * {
+    color: #555;
+}
+
+.footer-links-wrapper .links-wrapper .footer-links-container .footer-links ul li {
+    padding: 5px 0;
+    list-style: none;
+}
+
+.footer-links-wrapper .links-wrapper .footer-links-container .footer-links ul li a {
+    text-decoration: none;
+}
+
+.footer-links-wrapper .links-wrapper .footer-links-container .footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main Section Styling */
+
+.highlight-wide {
+    padding: 10px 0;
+    background-color: #FAFAFA;
+}
+
+.highlight-wide.macbook-pro {
+    padding-top: 50px;
+}
+
+.highlight-wide .internal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.highlight-wide .internal-wrapper>* {
+    padding: 1px 0;
+}
+
+.highlight-wide .internal-wrapper .product-information {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.highlight-wide .internal-wrapper .product-image {
+    padding: 20px 0;
+    /* background-color: rebeccapurple; */
+}
+
+.highlight-wide .links-wrapper ul,
+.highlight-compact .links-wrapper ul {
+    padding: 3px 0 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.highlight-wide .links-wrapper ul li a,
+.highlight-compact .links-wrapper ul li a {
+    text-decoration: none;
+    color: #2791F5;
+}
+
+.highlight-wide .links-wrapper ul li a:after,
+.highlight-compact .links-wrapper ul li a:after {
+    font-family: FontAwesome;
+    content: '\f105';
+    padding-left: 5px;
+    font-size: 0.75em;
+}
+
+.highlight-wide .links-wrapper ul li a:hover,
+.highlight-compact .links-wrapper ul li a:hover {
+    text-decoration: underline;
+}
+
+.highlight-wide.background-cover-iphone11pro {
+    background: url("../images/home/iphone11-pro-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 562px;
+    width: 100%;
+    background-position-x: 50%;
+}
+
+.bk-black *:not(a) {
+    color: #fff;
+}
+
+.highlight-wide.background-cover-iphone11 {
+    background: url("../images/home/iphone11-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 562px;
+    width: 100%;
+    background-position-x: 50%;
+}
+
+.highlight-compact-container {
+    display: flex;
+}
+
+.highlight-compact {
+    margin: 10px 5px;
+    padding: 2rem;
+}
+
+.highlight-compact img {
+    padding: 1rem 0;
+}
+
+.highlight-compact .internal-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.highlight-compact.background-cover-watch-series5 {
+    background-size: cover;
+    background: url('../images/home/watch-series-5.jpg');
+    background-repeat: no-repeat;
+    height: 540px;
+    width: 50%;
+    background-position: 50% 70%;
+}
+
+.highlight-compact.background-cover-apple-card {
+    background-size: cover;
+    background: url('../images/home/apple-card.jpg');
+    background-repeat: no-repeat;
+    height: 540px;
+    width: 50%;
+    background-position: 50% 70%;
+
+}
+
+.highlight-compact.background-cover-apple-tv {
+    background-size: cover;
+    background: url('../images/home/apple-tv-background.jpg');
+    background-repeat: no-repeat;
+    height: 540px;
+    width: 50%;
+    background-position: 50% 70%;
+
+}
+
+.highlight-compact.background-cover-apple-tv .internal-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.highlight-compact.background-cover-apple-tv .internal-wrapper .watch-trailer {
+    font-size: 0.95em;
+    color: rgb(66, 3, 211);
+    text-decoration: none;
+}
+
+.highlight-compact.background-cover-apple-tv .internal-wrapper .watch-trailer::after {
+    font-family: FontAwesome;
+    content: ' \f144';
+}
+
+.highlight-compact .internal-wrapper.background-cover-airpods-pro *:not(a) {
+    color: white;
+}
+
+.highlight-compact .internal-wrapper.background-cover-airpods-pro {
+    background-size: cover;
+    background: url('../images/home/air-pods.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 150%;
+    height: 100%;
+    padding-bottom: 20rem;
+}
+
+.highlight-compact {
+    background-color: black;
+    height: 540px;
+    width: 50%;
+}
+
+.highlight-compact h1 {
+    font-weight: 700;
+    font-size: 2em;
+    padding: 10px 0;
+}
+
+.highlight-compact.background-cover-macbook-pro {
+    background-size: cover;
+    background: url('../images/home/macbook-pro.jpg');
+    background-repeat: no-repeat;
+    height: 540px;
+    width: 50%;
+    background-position: 50% 120%;
+    background-color: #FAFAFA;
+
+}
+
+.highlight-compact.background-cover-ipad {
+    background-size: cover;
+    background: url('../images/home/new-ipad.jpg');
+    background-repeat: no-repeat;
+    height: 540px;
+    width: 50%;
+    background-position: 50% 120%;
+}
+
+
+/* Subfooter */
+
+.copyright-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-info ul {
+    display: flex;
+    gap: 5px;
+}
+
+.copyright-info ul li a {
+    text-decoration: none;
+}
+
+.copyright-info:nth-child(1) p>span {
+    font-family: IconAwesome;
+    content: '\f1f9';
+}
