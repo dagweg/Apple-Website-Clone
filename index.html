@@ -4,61 +4,95 @@
 
 <head>
     <title>Apple</title>
+    <link rel="stylesheet" href="./css/tailwind-dist.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <script src="https://kit.fontawesome.com/bb488c4407.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Mooli&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+    <script src="./scripts/scripts.js"></script>
 </head>
 
 <body>
-    <div class="outer-wrapper">
-        <header class="header-wrapper">
-            <div class="internal-wrapper">
+    <div class="outer-wrapper bg-white bg-white">
+        <header class="header-wrapper bg-black backdrop-blur-2xl text-white fixed w-full z-50">
+            <div class="mx-auto w-full max-w-4xl">
                 <div class="header-links-wrapper">
-                    <ul>
-                        <li class="logo-link"><a href="/"><img src="./images/icons/logo.png"></img></a></li>
-                        <li><a href="/mac/">Mac</a></li>
-                        <li><a href="/iphone/">iPhone</a></li>
-                        <li><a href="/ipad/">iPad</a></li>
-                        <li><a href="/watch/">Watch</a></li>
-                        <li><a href="/tv/">Tv</a></li>
-                        <li><a href="/music/">Music</a></li>
-                        <li><a href="/support/">Support</a></li>
-                        <li class="search-link"><a href="/search/"><img src="./images/icons/search-icon.png"></a></li>
-                        <li class="cart-link"><a href="/cart/"><img src="./images/icons/cart.png"></a></li>
+                    <ul class="flex flex-row justify-between py-4 px-6">
+                        <div>
+                            <li class="logo-link w-4"><a href="./images/icons/logo.png"><img
+                                        src="./images/icons/logo.png"></img></a></li>
+                        </div>
+                        <div
+                            class="hidden header-links-main fixed h-full w-full bg-black left-0 top-0 px-40 flex flex-col justify-start py-10 gap-4 text-2xl font-bold z-10">
+                            <li class="header-link"><a href="#">Mac </a><i class="fa-solid fa-angle-right"></i></li>
+                            <li class="header-link"><a href="#">iPhone </a><i class="fa-solid fa-angle-right"></i></li>
+                            <li class="header-link"><a href="#">iPad </a><i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li class="header-link"><a href="#">Watch </a><i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li class="header-link"><a href="#">Tv </a><i class="fa-solid fa-angle-right"></i></li>
+                            <li class="header-link"><a href="#">Music </a><i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li class="header-link"><a href="#">Support </a><i class="fa-solid fa-angle-right"></i></li>
+                        </div>
+                        <div class="hidden w-full flex justify-around px-10 lg:flex">
+                            <li class="header-link"><a href="#">Mac </a><i class="fa-solid fa-angle-right"></i></li>
+                            <li class="header-link"><a href="#">iPhone </a><i class="fa-solid fa-angle-right"></i></li>
+                            <li class="header-link"><a href="#">iPad </a><i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li class="header-link"><a href="#">Watch </a><i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li class="header-link"><a href="#">Tv </a><i class="fa-solid fa-angle-right"></i></li>
+                            <li class="header-link"><a href="#">Music </a><i class="fa-solid fa-angle-right"></i>
+                            </li>
+                            <li class="header-link"><a href="#">Support </a><i class="fa-solid fa-angle-right"></i></li>
+                        </div>
+                        <div class="flex flex-row justify-around w-32 h-full">
+                            <li class="search-link w-4"><a href="#"><img src="./images/icons/search-icon.png"></a>
+                            </li>
+                            <li class="cart-link w-4"><a href="#"><img src="./images/icons/cart.png"></a></li>
+                            <div class="lg:hidden z-50">
+                                <li class="hamburger-menu fa-solid fa-bars w-4  cursor-pointer"></li>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
-
         </header>
 
-        <section class="highlight-wide macbook-pro">
-            <div class="internal-wrapper">
-                <h5>16-inch model</h5>
-                <h1>MacBook Pro</h1>
-                <div class="product-information">The best for the brightest.</div>
+        <section class="highlight-wide section-height pt-20">
+            <div class="highlight-wide-content">
+                <h5 class="product-info">16-inch model</h5>
+                <h1 class="product-title">MacBook Pro</h1>
+                <div class="product-information product-slogan">The best for the brightest.</div>
                 <div class="links-wrapper">
-                    <ul>
-                        <li><a href="/macbook-pro">Learn more</a></li>
-                        <li><a href="/buy/macbook-pro">Buy</a></li>
+                    <ul class="product-links">
+                        <li><a href="/macbook-pro">Learn more <span class="fa-solid fa-"></span></a></li>
+                        <li><a href="/buy/macbook-pro">Buy <span class="fa-solid fa-"></span></a></li>
                     </ul>
                 </div>
-                <div class="product-image">
+                <div class="product-image py-4">
                     <img src="./images/home/macbook-pro.jpg" alt="">
                 </div>
             </div>
         </section>
 
-        <section class="highlight-wide background-cover-iphone11pro bk-black">
-            <div class="internal-wrapper">
-                <h1>iPhone 11 Pro</h1>
-                <h3>Pro cameras, Pro display, Pro performance.</h3>
-                <h5>From $24.45/mo, or $599 with trade-in.</h5>
+        <section class="highlight-wide section-height relative">
+            <div class="z-0">
+                <img src="./images/home/iphone11-pro-bg.jpg" alt="iphone 11 pro"
+                    class="absolute h-full w-full top-0 object-cover">
+            </div>
+            <div class="highlight-wide-content  text-white relative z-10">
+                <h1 class="product-title">iPhone 11 Pro</h1>
+                <h3 class="product-slogan">Pro cameras, Pro display, Pro performance.</h3>
+                <h5 class="product-info">From $24.45/mo, or $599 with trade-in.</h5>
                 <div class="links-wrapper">
-                    <ul>
+                    <ul class="product-links">
                         <li><a href="/macbook-pro">Learn more</a></li>
                         <li><a href="/buy/macbook-pro">Buy</a></li>
                     </ul>
@@ -66,13 +100,17 @@
             </div>
         </section>
 
-        <section class="highlight-wide background-cover-iphone11">
-            <div class="internal-wrapper">
-                <h1>iPhone 11</h1>
-                <h3>Just the right amount of everything.</h3>
-                <h5>From $16.62/mo, or $399 with trade-in.</h5>
+        <section class="highlight-wide section-height relative">
+            <div class="z-0">
+                <img src="./images/home/iphone11-bg.jpg" alt="iphone 11 pro"
+                    class="absolute h-full w-full top-0 object-cover">
+            </div>
+            <div class="highlight-wide-content relative z-10">
+                <h1 class="product-title">iPhone 11</h1>
+                <h3 class="product-slogan">Just the right amount of everything.</h3>
+                <h5 class="product-info">From $16.62/mo, or $399 with trade-in.</h5>
                 <div class="links-wrapper">
-                    <ul>
+                    <ul class="product-links">
                         <li><a href="/macbook-pro">Learn more</a></li>
                         <li><a href="/buy/macbook-pro">Buy</a></li>
                     </ul>
@@ -81,26 +119,35 @@
         </section>
 
         <div class="highlight-compact-container">
-            <section class="highlight-compact background-cover-watch-series5">
-                <div class="internal-wrapper">
+            <section class="highlight-compact relative section-height md:">
+                <div class="z-0">
+                    <img src="./images/home/watch-series-5.jpg" alt="iphone 11 pro"
+                        class="absolute h-full w-full top-6 object-cover">
+                </div>
+                <div class="highlight-compact-content relative z-10">
                     <img src="./images/icons/watch-series5-logo.png">
-                    <h3>With the new Always-On Retina display.</h3>
-                    <h3>You've never seen a watch like this.</h3>
+                    <h3 class="product-slogan font-semibold pt-3">With the new Always-On Retina display.</h3>
+                    <h3 class="product-slogan font-medium">You've never seen a watch like this.</h3>
                     <div class="links-wrapper">
-                        <ul>
+                        <ul class="product-links">
                             <li><a href="/macbook-pro">Learn more</a></li>
                             <li><a href="/buy/macbook-pro">Buy</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="highlight-compact background-cover-apple-card">
-                <div class="internal-wrapper">
+
+            <section class="highlight-compact relative section-height">
+                <div class="z-0">
+                    <img src="./images/home/apple-card.jpg" alt="iphone 11 pro"
+                        class="absolute h-full w-full top-10 object-cover">
+                </div>
+                <div class="highlight-compact-content relative">
                     <img src="./images/icons/apple-card-logo.png">
-                    <h3>With the new Always-On Retina display.</h3>
-                    <h3>You've never seen a watch like this.</h3>
+                    <h3 class="product-slogan pt-4 lg:p-10">Get 3% Daily Cash on purchases from Apple using Apple Card.
+                    </h3>
                     <div class="links-wrapper">
-                        <ul>
+                        <ul class="product-links">
                             <li><a href="/macbook-pro">Learn more</a></li>
                             <li><a href="/buy/macbook-pro">Buy</a></li>
                         </ul>
@@ -110,20 +157,29 @@
         </div>
 
         <div class="highlight-compact-container">
-            <section class="highlight-compact background-cover-apple-tv">
-                <div class="internal-wrapper">
+            <section class="highlight-compact relative section-height">
+                <div class="z-0">
+                    <img src="./images/home/apple-tv-background.jpg" alt="iphone 11 pro"
+                        class="absolute h-full w-full top-0 object-cover">
+                </div>
+                <div class="highlight-compact-content relative flex flex-col justify-between h-full">
                     <img src="./images/icons/apple-tv-logo.png">
                     <img src="./images/icons/servant-logo.png">
-                    <a class="watch-trailer" href="/watch-trailer/">Watch the trailer </a>
+                    <a class="watch-trailer" href="#">Watch the trailer <span
+                            class="fa-solid fa-circle-play"></span></a>
                 </div>
             </section>
-            <section class="highlight-compact">
-                <div class="internal-wrapper background-cover-airpods-pro">
-                    <h1>AirPods Pro</h1>
-                    <!-- <br> -->
-                    <h3>Magic like you've never heard.</h3>
+
+            <section class="highlight-compact relative section-height text-white p-0">
+                <div class="z-0 bg-black h-full w-full relative overflow-hidden flex justify-center items-center">
+                    <img src="./images/home/air-pods.jpg" alt="iphone 11 pro"
+                        class="absolute object-center  top-52 w-50 z-0 ">
+                </div>
+                <div class="highlight-compact-content relative z-10" style="bottom:32rem;">
+                    <h1 class="product-title ">AirPods Pro</h1>
+                    <h3 class="product-slogan">Magic like you've never heard.</h3>
                     <div class="links-wrapper">
-                        <ul>
+                        <ul class="product-links">
                             <li><a href="/macbook-pro">Learn more</a></li>
                             <li><a href="/buy/macbook-pro">Buy</a></li>
                         </ul>
@@ -133,26 +189,34 @@
         </div>
 
         <div class="highlight-compact-container">
-
-            <section class="highlight-compact background-cover-macbook-pro">
-                <div class="internal-wrapper">
-                    <h5>16-inch model</h5>
-                    <h1>MacBook Pro</h1>
-                    <div class="product-information">The best for the brightest.</div>
+            <section class="highlight-compact section-height">
+                <div class="z-0 h-full w-full relative overflow-hidden">
+                    <img src="./images/home/macbook-pro.jpg" alt="iphone 11 pro"
+                        class="absolute object-scale-down h-full w-full top-32">
+                </div>
+                <div class="highlight-compact-content relative z-10" style="bottom:30rem;">
+                    <h5 class="product-info">16-inch model</h5>
+                    <h1 class="product-title">MacBook Pro</h1>
+                    <div class="product-information product-slogan">The best for the brightest.</div>
                     <div class="links-wrapper">
-                        <ul>
+                        <ul class="product-links">
                             <li><a href="/macbook-pro">Learn more</a></li>
                             <li><a href="/buy/macbook-pro">Buy</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="highlight-compact background-cover-ipad">
-                <div class="internal-wrapper">
+
+            <section class="highlight-compact relative section-height">
+                <div class="z-0 h-full w-full relative overflow-hidden">
+                    <img src="./images/home/new-ipad.jpg" alt="iphone 11 pro"
+                        class="absolute object-cover h-full w-full top-50">
+                </div>
+                <div class="highlight-compact-content relative z-10" style="bottom:30rem;">
                     <img src="./images/icons/new-ipad-logo.png">
-                    <div class="product-information">Like a computer. Unlike any computer.</div>
+                    <div class="product-information product-slogan">Like a computer. Unlike any computer.</div>
                     <div class="links-wrapper">
-                        <ul>
+                        <ul class="product-links">
                             <li><a href="/macbook-pro">Learn more</a></li>
                             <li><a href="/buy/macbook-pro">Buy</a></li>
                         </ul>
@@ -161,55 +225,69 @@
             </section>
         </div>
 
-        <footer class="footer-wrapper">
-
-            <div class="internal-wrapper">
-                <div class="upper-text-container">
+        <footer class="footer-wrapper bg-gray-100">
+            <div class="max-w-4xl w-full mx-auto">
+                <div class="upper-text-container p-4 flex flex-col justify-evenly gap-4 text-xs">
                     <p>
-                        1. Trade-in values will vary based on the condition, year, and configuration of your eligible
-                        trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to
+                        1. Trade-in values will vary based on the condition, year, and configuration of your
+                        eligible
+                        trade-in device. Not all devices are eligible for credit. You must be at least 18 years old
+                        to
                         be
-                        eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward
-                        qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on
-                        receipt of a qualifying device matching the description provided when estimate was made. Sales
+                        eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied
+                        toward
+                        qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is
+                        based on
+                        receipt of a qualifying device matching the description provided when estimate was made.
+                        Sales
                         tax
-                        may be assessed on full value of a new device purchase. In-store trade-in requires presentation
+                        may be assessed on full value of a new device purchase. In-store trade-in requires
+                        presentation
                         of a
-                        valid photo ID (local law may require saving this information). Offer may not be available in
+                        valid photo ID (local law may require saving this information). Offer may not be available
+                        in
                         all
                         stores, and may vary between in-store and online trade-in. Some stores may have additional
-                        requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity of
+                        requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity
+                        of
                         any
-                        trade-in transaction for any reason. More details are available from Apple’s trade-in partner
+                        trade-in transaction for any reason. More details are available from Apple’s trade-in
+                        partner
                         for
                         trade-in and recycling of eligible devices. Restrictions and limitations may apply.
 
                     </p>
 
                     <p>
-                        Apple Vision Pro has not been authorized as required by the rules of the Federal Communications
-                        Commission. This device is not, and may not be, offered for sale or lease, or sold or leased,
+                        Apple Vision Pro has not been authorized as required by the rules of the Federal
+                        Communications
+                        Commission. This device is not, and may not be, offered for sale or lease, or sold or
+                        leased,
                         until
                         authorization is obtained.
                     </p>
 
                     <p>
-                        Apple Vision Pro will be available early next year on <a href="/"
+                        Apple Vision Pro will be available early next year on <a href="#"
                             class="paragraph-link">apple.com</a> and at Apple retail
                         stores in the
                         U.S.
                     </p>
 
                     <p>
-                        To access and use all Apple Card features and products available only to Apple Card users, you
+                        To access and use all Apple Card features and products available only to Apple Card users,
+                        you
                         must
-                        add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or
-                        iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in
+                        add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of
+                        iOS or
+                        iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants
+                        in
                         the
                         United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.
                     </p>
                     <p>
-                        If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions
+                        If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with
+                        questions
                         about Apple Card.
                     </p>
 
@@ -223,190 +301,240 @@
                     </p>
                 </div>
 
-                <hr>
+                <hr class="my-10 mx-2 text-black">
 
-                <div class="footer-links-wrapper">
+                <div class="footer-links-wrapper lg:flex lg:flex-row">
 
-                    <div class="links-wrapper">
-                        <section class="footer-links-container">
-                            <strong>Shop and Learn</strong>
-                            <div class="footer-links">
-                                <ul>
-                                    <li><a href="/Store/">Store</a></li>
-                                    <li><a href="/Mac/">Mac</a></li>
-                                    <li><a href="/iPad/">iPad</a></li>
-                                    <li><a href="/iPhone/">iPhone</a></li>
-                                    <li><a href="/Watch/">Watch</a></li>
-                                    <li><a href="/Vision/">Vision</a></li>
-                                    <li><a href="/AirPods/">AirPods</a></li>
-                                    <li><a href="/TV&Home/">TV & Home</a></li>
-                                    <li><a href="/AirTag/">AirTag</a></li>
-                                    <li><a href="/Accessories/">Accessories</a></li>
-                                    <li><a href="/GiftCards/">/Gift Cards</a></li>
+                    <div class="links-wrapper ">
+                        <section class="footer-links-container ">
+                            <div class="footer-links-expand-collapse flex flex-row justify-between">
+                                <strong class="footer-links-header">Shop and Learn</strong>
+                                <i class="footer-link-open-close fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <ul class="footer-links hidden lg:flex">
+                                    <li><a href="#">Store</a></li>
+                                    <li><a href="#">Mac</a></li>
+                                    <li><a href="#">iPad</a></li>
+                                    <li><a href="#">iPhone</a></li>
+                                    <li><a href="#">Watch</a></li>
+                                    <li><a href="#">Vision</a></li>
+                                    <li><a href="#">AirPods</a></li>
+                                    <li><a href="#">TV & Home</a></li>
+                                    <li><a href="#">AirTag</a></li>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Gift Cards</a></li>
                                 </ul>
                             </div>
+                            <hr class="lg:hidden">
                         </section>
                         <section class="footer-links-container">
-                            <strong>Apple Wallet</strong>
-                            <div class="footer-links">
-                                <ul>
-                                    <li><a href="/Wallet/">Wallet</a></li>
-                                    <li><a href="/AppleCard/">Apple Card</a></li>
-                                    <li><a href="/ApplePay/">Apple Pay</a></li>
-                                    <li><a href="/AppleCash/">Apple Cash</a></li>
+                            <div class="footer-links-expand-collapse flex flex-row justify-between">
+                                <strong class="footer-links-header">Apple Wallet</strong>
+                                <i class="footer-link-open-close fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <ul class="footer-links hidden lg:flex">
+                                    <li><a href="#">Wallet</a></li>
+                                    <li><a href="#">Apple Card</a></li>
+                                    <li><a href="#">Apple Pay</a></li>
+                                    <li><a href="#">Apple Cash</a></li>
                                 </ul>
                             </div>
-                        </section>
-                    </div>
-
-                    <div class="links-wrapper">
-                        <section class="footer-links-container">
-                            <strong>Account</strong>
-                            <div class="footer-links">
-                                <ul>
-                                    <li><a href="/ManageYourAppleID/">Manage Your Apple ID</a></li>
-                                    <li><a href="/AppleStoreAccount/">Apple Store Account</a></li>
-                                    <li><a href="/iCloud.com/">iCloud.com</a></li>
-                                    <li><a href="/AppleCash/">Apple Cash</a></li>
-                                </ul>
-                            </div>
-                        </section>
-
-                        <section class="footer-links-container">
-                            <strong>Entertainment</strong>
-                            <div class="footer-links">
-                                <ul>
-                                    <li><a href="/AppleOne/">Apple One</a></li>
-                                    <li><a href="/AppleTV+/">Apple TV+</a></li>
-                                    <li><a href="/AppleMusic/">Apple Music</a></li>
-                                    <li><a href="/AppleArcade/">Apple Arcade</a></li>
-                                    <li><a href="/AppleFitness+/">Apple Fitness+</a></li>
-                                    <li><a href="/AppleNews+/">Apple News+</a></li>
-                                    <li><a href="/ApplePodcasts/">Apple Podcasts</a></li>
-                                    <li><a href="/AppleBooks/">Apple Books</a></li>
-                                    <li><a href="/AppStore/">App Store</a></li>
-
-                                </ul>
-                            </div>
+                            <hr class="lg:hidden">
                         </section>
                     </div>
 
                     <div class="links-wrapper">
                         <section class="footer-links-container">
-                            <strong>Apple Store</strong>
-                            <div class="footer-links">
-                                <ul>
-                                    <li><a href="/FindaStore/">Find a Store</a></li>
-                                    <li><a href="/GeniusBar/">Genius Bar</a></li>
-                                    <li><a href="/Todayat Apple/">Today at Apple</a></li>
-                                    <li><a href="/AppleCamp/">Apple Camp</a></li>
-                                    <li><a href="/AppleStore App/">Apple Store App</a></li>
-                                    <li><a href="/CertifiedRefurbished/">Certified Refurbished</a></li>
-                                    <li><a href="/AppleTrade In/">Apple Trade In</a></li>
+                            <div class="footer-links-expand-collapse flex flex-row justify-between">
+                                <strong class="footer-links-header">Account</strong>
+                                <i class="footer-link-open-close fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <ul class="footer-links hidden lg:flex">
+                                    <li><a href="#">Manage Your Apple ID</a></li>
+                                    <li><a href="#">Apple Store Account</a></li>
+                                    <li><a href="#">iCloud.com</a></li>
+                                    <li><a href="#">Apple Cash</a></li>
+                                </ul>
+                            </div>
+                            <hr class="lg:hidden">
+                        </section>
+
+                        <section class="footer-links-container">
+                            <div class="footer-links-expand-collapse flex flex-row justify-between">
+                                <strong class="footer-links-header" class="footer-links-header">Entertainment</strong>
+                                <i class="footer-link-open-close fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <ul class="footer-links hidden lg:flex">
+                                    <li><a href="#">Apple One</a></li>
+                                    <li><a href="#">Apple TV+</a></li>
+                                    <li><a href="#">Apple Music</a></li>
+                                    <li><a href="#">Apple Arcade</a></li>
+                                    <li><a href="#">Apple Fitness+</a></li>
+                                    <li><a href="#">Apple News+</a></li>
+                                    <li><a href="#">Apple Podcasts</a></li>
+                                    <li><a href="#">Apple Books</a></li>
+                                    <li><a href="#">App Store</a></li>
+
+                                </ul>
+                            </div>
+                            <hr class="lg:hidden">
+                        </section>
+                    </div>
+
+                    <div class="links-wrapper">
+                        <section class="footer-links-container">
+                            <div class="footer-links-expand-collapse flex flex-row justify-between">
+                                <strong class="footer-links-header">Apple Store</strong>
+                                <i class="footer-link-open-close fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <ul class="footer-links hidden lg:flex">
+                                    <li><a href="#">Find a Store</a></li>
+                                    <li><a href="#">Genius Bar</a></li>
+                                    <li><a href="#">Today at Apple</a></li>
+                                    <li><a href="#">Apple Camp</a></li>
+                                    <li><a href="#">Apple Store App</a></li>
+                                    <li><a href="#">Certified Refurbished</a></li>
+                                    <li><a href="#">Apple Trade In</a></li>
                                     <li><a href="/Financing">Financing</a></li>
-                                    <li><a href="/CarrierDeals at Apple/">Carrier Deals at Apple</a></li>
-                                    <li><a href="/OrderStatus/">Order Status</a></li>
-                                    <li><a href="/ShoppingHelp/">Shopping Help</a></li>
+                                    <li><a href="#">Carrier Deals at Apple</a></li>
+                                    <li><a href="#">Order Status</a></li>
+                                    <li><a href="#">Shopping Help</a></li>
                                 </ul>
                             </div>
+                            <hr class="lg:hidden">
                         </section>
                     </div>
 
                     <div class="links-wrapper">
                         <section class="footer-links-container">
-                            <strong>For Business</strong>
-                            <div class="footer-links">
-                                <ul>
-                                    <li><a href="/AppleandBusiness/">Apple and Business</a></li>
-                                    <li><a href="/ShopforBusiness/">Shop for Business</a></li>
+                            <div class="footer-links-expand-collapse flex flex-row justify-between">
+                                <strong class="footer-links-header">For Business</strong>
+                                <i class="footer-link-open-close fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <ul class="footer-links hidden lg:flex">
+                                    <li><a href="#">Apple and Business</a></li>
+                                    <li><a href="#">Shop for Business</a></li>
                                 </ul>
                             </div>
+                            <hr class="lg:hidden">
                         </section>
 
                         <section class="footer-links-container">
-                            <strong>For Education</strong>
-                            <div class="footer-links">
-                                <ul>
-                                    <li><a href="/AppleandEducation/">Apple and Education</a></li>
-                                    <li><a href="/ShopforK-12/">Shop for K-12</a></li>
-                                    <li><a href="/ShopforCollege/">Shop for College</a></li>
+                            <div class="footer-links-expand-collapse flex flex-row justify-between">
+                                <strong class="footer-links-header">For Education</strong>
+                                <i class="footer-link-open-close fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <ul class="footer-links hidden lg:flex">
+                                    <li><a href="#">Apple and Education</a></li>
+                                    <li><a href="#">Shop for K-12</a></li>
+                                    <li><a href="#">Shop for College</a></li>
                                 </ul>
                             </div>
-                        </section>
-
-
-
-                        <section class="footer-links-container">
-                            <strong>For Healthcare</strong>
-                            <div class="footer-links">
-                                <ul>
-                                    <li><a href="/AppleinHealthcare/">Apple in Healthcare</a></li>
-                                    <li><a href="/HealthonAppleWatch/">Health on Apple Watch</a></li>
-                                    <li><a href="/HealthRecordsoniPhone/">Health Records on iPhone</a></li>
-                                </ul>
-                            </div>
+                            <hr class="lg:hidden">
                         </section>
 
 
 
                         <section class="footer-links-container">
-                            <strong>For Government</strong>
-                            <div class="footer-links">
-                                <ul>
-                                    <li><a href="/ShopforGovernment/">Shop for Government</a></li>
-                                    <li><a href="/ShopforVeteransandMilitary/">Shop for Veterans and Military</a></li>
+                            <div class="footer-links-expand-collapse flex flex-row justify-between">
+                                <strong class="footer-links-header">For Healthcare</strong>
+                                <i class="footer-link-open-close fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <ul class="footer-links hidden lg:flex">
+                                    <li><a href="#">Apple in Healthcare</a></li>
+                                    <li><a href="#">Health on Apple Watch</a></li>
+                                    <li><a href="#">Health Records on iPhone</a></li>
                                 </ul>
                             </div>
+                            <hr class="lg:hidden">
+                        </section>
+
+
+
+                        <section class="footer-links-container">
+                            <div class="footer-links-expand-collapse flex flex-row justify-between">
+                                <strong class="footer-links-header">For Government</strong>
+                                <i class="footer-link-open-close fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <ul class="footer-links hidden lg:flex">
+                                    <li><a href="#">Shop for Government</a></li>
+                                    <li><a href="#">Shop for Veterans and Military</a></li>
+                                </ul>
+                            </div>
+                            <hr class="lg:hidden">
                         </section>
                     </div>
 
                     <div class="links-wrapper">
                         <section class="footer-links-container">
-                            <strong>Apple Values</strong>
-                            <div class="footer-links">
-                                <ul>
-                                    <li><a href="/Accessibility/">Accessibility</a></li>
-                                    <li><a href="/Education/">Education</a></li>
-                                    <li><a href="/Environment/">Environment</a></li>
-                                    <li><a href="/Inclusion and Diversity/">Inclusion and Diversity</a></li>
-                                    <li><a href="/Privacy/">Privacy</a></li>
-                                    <li><a href="/Racial Equity and Justice/">Racial Equity and Justice</a></li>
-                                    <li><a href="/Supplier Responsibility/">Supplier Responsibility</a></li>
+                            <div class="footer-links-expand-collapse flex flex-row justify-between">
+                                <strong class="footer-links-header">Apple Values</strong>
+                                <i class="footer-link-open-close fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <ul class="footer-links hidden lg:flex">
+                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="#">Education</a></li>
+                                    <li><a href="#">Environment</a></li>
+                                    <li><a href="#">Inclusion and Diversity</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Racial Equity and Justice</a></li>
+                                    <li><a href="#">Supplier Responsibility</a></li>
                                 </ul>
                             </div>
+                            <hr class="lg:hidden">
                         </section>
 
                         <section class="footer-links-container">
-                            <strong>About Apple</strong>
-                            <div class="footer-links">
-                                <ul>
-                                    <li><a href="/Newsroom/">Newsroom</a></li>
-                                    <li><a href="/AppleLeadership/">AppleLeadership</a></li>
-                                    <li><a href="/CareerOpportunities/">CareerOpportunities</a></li>
-                                    <li><a href="/Investors/">Investors</a></li>
-                                    <li><a href="/Ethics&Compliance/">Ethics</a></li>
-                                    <li><a href="/Events/">Events</a></li>
-                                    <li><a href="/ContactApple/">ContactApple</a></li>
+                            <div class="footer-links-expand-collapse flex flex-row justify-between">
+                                <strong class="footer-links-header">About Apple</strong>
+                                <i class="footer-link-open-close fa-solid fa-add"></i>
+                            </div>
+                            <div>
+                                <ul class="footer-links hidden lg:flex">
+                                    <li><a href="#">Newsroom</a></li>
+                                    <li><a href="#">AppleLeadership</a></li>
+                                    <li><a href="#">CareerOpportunities</a></li>
+                                    <li><a href="#">Investors</a></li>
+                                    <li><a href="#">Ethics</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">ContactApple</a></li>
                                 </ul>
                             </div>
+                            <hr class="lg:hidden">
                         </section>
                     </div>
                 </div>
 
-                <p>More ways to shop. Find an <a href="/">Apple Store</a> or <a href="/">other retailer</a> near you. Or
-                    call
-                    1-800-MY-APPLE.</p>
-                <hr>
-                <div class="copyright-info">
-                    <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Apple Inc. All rights reserved.</p>
-                    <ul>
-                        <li><a href="/">Privacy Policy</a></li> |
-                        <li><a href="/">Terms of Use</a></li> |
-                        <li><a href="/">Sales</a></li> |
-                        <li><a href="/">Legal</a></li> |
-                        <li><a href="/">Site Map</a></li>
-                    </ul>
-                    <p><img src="./images/icons/16.png"><span>UNITED STATES</span></p>
+                <div class="footer-links-container">
+                    <p class="pt-4">More ways to shop. Find an <a href="#" class="paragraph-link">Apple Store</a> or
+                        <a href="#" class="paragraph-link">other retailer</a> near
+                        you. Or
+                        call
+                        1-800-MY-APPLE.
+                    </p>
+                    <hr class="my-4">
+                    <div class="copyright-info">
+                        <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Apple Inc. All rights reserved.
+                        </p>
+                        <ul class="flex gap-x-5 max-w-lg w-full pt-1 pb-2">
+                            <li><a href="#">Privacy Policy</a></li> |
+                            <li><a href="#">Terms of Use</a></li> |
+                            <li><a href="#">Sales</a></li> |
+                            <li><a href="#">Legal</a></li> |
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                        <p class="flex pb-5"><img src="./images/icons/16.png"><span>UNITED STATES</span></p>
+                    </div>
                 </div>
             </div>
         </footer>

@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-shell": "^0.8.0",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-cli": "^0.1.2"
+  },
+  "scripts": {
+    "build:css": "tailwindcss-cli build  -i ./css/tailwind-dev.css -o ./css/tailwind-dist.css"
+  }
+}

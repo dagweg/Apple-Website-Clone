@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .product-title {
+        @apply text-3xl font-bold
+    }
+
+    .product-slogan {
+        @apply text-lg font-medium
+    }
+
+    .product-info {
+        @apply text-sm font-medium
+    }
+
+    .product-links {
+        @apply text-blue-600 font-medium text-lg flex justify-center gap-6 hidden
+    }
+
+    .watch-trailer {
+        @apply text-blue-600 font-bold
+    }
+
+    .highlight-wide {
+        @apply py-8 mb-4 bg-gray-50
+    }
+
+    .highlight-wide-content {
+        @apply flex flex-col items-center
+    }
+
+    .highlight-compact {
+        @apply py-10 mb-4 bg-gray-50
+    }
+
+    .highlight-compact-content {
+        @apply py-8 flex flex-col items-center
+    }
+
+
+    .footer-links-container {
+        @apply flex flex-col mx-4 my-2
+    }
+
+    .footer-links-header {
+        @apply mb-2
+    }
+
+    .footer-links {
+        @apply flex flex-col gap-2 ml-4 lg:m-0
+    }
+
+    .utter-bottom {
+        @apply flex flex-col gap-2
+    }
+
+    .footer-links-expand-collapse {
+        @apply cursor-pointer
+    }
+
+    .highlight-compact-container {
+        @apply lg:grid lg:gap-5 lg:mx-3 md:grid-cols-2
+    }
+
+    .links-wrapper {
+        @apply lg:flex lg:flex-col lg:gap-5 gap-0
+    }
+}
+
